@@ -1,1 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <h1 id="title">Customer Survey Form</h1>
+
+        <p id="description"><i>Thank you for taking the time to help us improve
+                the shopping experience.</i></p>
+
+        <form id="survey-form">
+            <fieldset>
+                <label for="name" id="name-label">Name:
+                    <input id="name" type="text" required
+                        placeholder="John Doe" />
+                </label>
+                <label for="email" id="email-label">Email:
+                    <input id="email" type="email" required
+                        placeholder="johndoe@gmail.com" />
+                </label>
+                <label for="number" id="number-label">Number:
+                    <input id="number" type="number" required min="0" max="100"
+                        placeholder="0" />
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <label for="dropdown" id="shopping">How was your shopping
+                    experience?</label>
+                <select id="dropdown" required>
+                    <option value disabled selected>Select your shopping
+                        experience.</option>
+                    <option value="option 2">It was a good shopping
+                        experience.</option>
+                    <option value="option 3">Needs improvement.</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend id="recommendation">Would you recommend our shop to a
+                    friend?</legend>
+                <label for="option1"><input type="radio" name="radioGroup"
+                        id="option1" value="option1" checked />
+                    Definitely</label>
+                <br>
+                <label for="option2"><input type="radio" name="radioGroup"
+                        id="option2" value="option2" /> Maybe</label>
+                <br>
+                <label for="option3"><input type="radio" name="radioGroup"
+                        id="option3" value="option3" /> Not sure</label>
+            </fieldset>
+
+            <fieldset>
+                <label for="fav-item">What is your favourite item to shop at our
+                    place?
+                    <label for="shopping-item">
+                        <input type="checkbox" class="inline" value="checkbox"
+                            required /> Books
+                        <input type="checkbox" class="inline" value="checkbox"
+                            required /> Notebooks
+                        <input type="checkbox" class="inline" value="checkbox"
+                            required /> Maps
+                        <input type="checkbox" class="inline" value="checkbox"
+                            required /> Pen
+                        <input type="checkbox" class="inline" value="checkbox"
+                            required /> None
+                    </label>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <label for="suggestion">Any suggestions?
+                    <textarea id="suggestion" name="suggestion" rows="3"
+                        cols="30"
+                        placeholder="I like the vast collection of books..."></textarea>
+                </label>
+            </fieldset>
+
+            <input type="submit" value="Submit" id="submit" />
+
+        </form>
+    </body>
+
+</html>
 
